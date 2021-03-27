@@ -11,6 +11,7 @@ export const Login = (req,res) => {
     //localhost->8080/api/v1/users/login/mheak/5555
     //const {username,password} = req.params
     const {username,password} = req.body
+    console.log("username : " + username,"password : " + password)
     res.json({
         username,
         password
